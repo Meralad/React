@@ -171,26 +171,26 @@ import React, { useEffect, useState } from "react";
 
 // --------------------------------------------------------------------------------------
 
-// function User() {
+function User() {
     
-    // useEffect(() => {
-    //     console.log(document.querySelector('#target'))
-    // })
-// ----------------------------------
-//     const [timer, setTimer] = useState(0)
+    useEffect(() => {
+        console.log(document.querySelector('#target'))
+    })
+
+    const [timer, setTimer] = useState(0)
     
-//     useEffect(() => {
-//         const flagInterval = setInterval(() => {
-//             console.log('fired')
-//             setTimer(timer + 1)
-//         }, 1000)
+    useEffect(() => {
+        const flagInterval = setInterval(() => {
+            console.log('fired')
+            setTimer(timer + 1)
+        }, 1000)
 
-//         return () => clearInterval(flagInterval);
-//     })
+        return () => clearInterval(flagInterval);
+    })
 
-//     return(
-//         <p id="target">{timer}</p>
-//     )
-// }
+    return(
+        <p id="target">{timer}</p>
+    )
+}
 
 export default User
