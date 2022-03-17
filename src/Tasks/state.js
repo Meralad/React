@@ -28,7 +28,41 @@ import React, { useEffect, useState } from "react";
 // )
 // }
 // }
-// ---------------------------------------------------------------------------------------
+// ----------------------------------increment, decrement-----------------------------------------------------
+// export default class Blade extends Component {
+//     constructor(props) {
+//       super(props)
+    
+//       this.state = {
+//          count: 0
+//       }
+//       this.increment = this.increment.bind(this)
+//       this.decrement = this.decrement.bind(this)
+//     }
+  
+//     increment(){
+//         this.setState(state => ({
+//             count: state.count + 1
+//         }))
+//     }
+  
+//     decrement(){
+//       this.setState(state => ({
+//           count: state.count - 1
+//       }))
+//   }
+    
+//       render() {
+//       return (
+//         <div>
+//             <h1>{this.state.count}</h1>
+//             <button onClick={this.increment}>increment</button>
+//             <button onClick={this.decrement}>decrement</button>
+//         </div>
+//       )
+//     }
+//   }
+//   ---------------------------------------------------------------------------------------
 // function User () {
 //     const [state, setState] = useState({
 //         title: "Текущее время",
@@ -83,35 +117,35 @@ import React, { useEffect, useState } from "react";
 //     )
 // }
 
-
+// --------------------checkbox-------------------------------------------------------------
 // function User() {
-//     const [checked, setChecked] = useState(false)
+//     const [checked, setChecked] = useState()
     
 //     return(
 //         <div>
 //             <label>
 //                 <input type="checkbox" 
 //                 checked={checked}
-//                 onChange={() => setChecked(!checkbox)} />
+//                 onChange={() => setChecked(checked)} />
 //                 Значение
 //             </label>
 //         </div>
 //     )
 // }
 
-
+// --------------------radio-------------------------------------------------------------
 
 // function User() {
 //     const [checked, setChecked] = useState(null)
     
 //     return(
 //         <div>
-            // <label>
-            //     <input type="radio" 
-            //     checked={checked === "Яблоко"}
-            //     onChange={() => setChecked("Яблоко")} />
-            //     Яблоко
-            // </label>
+//             <label>
+//                 <input type="radio" 
+//                 checked={checked === "Яблоко"}
+//                 onChange={() => setChecked("Яблоко")} />
+//                 Яблоко
+//             </label>
             
 //             <br />
             
@@ -134,7 +168,7 @@ import React, { useEffect, useState } from "react";
 //     )
 // }
 
-// --------------Рефакторинг---------------------
+// --------------Рефакторинг radio---------------------
 
 // function User() {
 //     const [checked, setChecked] = useState()
@@ -156,7 +190,7 @@ import React, { useEffect, useState } from "react";
 // </ul>
 //     );
 // }
-
+// --------------------select-------------------------------------------------------------
 // function User() {
 //     const [value, setValue] = useState('Яблоко');
 
@@ -171,26 +205,26 @@ import React, { useEffect, useState } from "react";
 
 // --------------------------------------------------------------------------------------
 
-function User() {
+// function User() {
     
-    useEffect(() => {
-        console.log(document.querySelector('#target'))
-    })
+//     useEffect(() => {
+//         console.log(document.querySelector('#target'))
+//     })
 
-    const [timer, setTimer] = useState(0)
+//     const [timer, setTimer] = useState(0)
     
-    useEffect(() => {
-        const flagInterval = setInterval(() => {
-            console.log('fired')
-            setTimer(timer + 1)
-        }, 1000)
+//     useEffect(() => {
+//         const flagInterval = setInterval(() => {
+//             console.log('fired')
+//             setTimer(timer + 1)
+//         }, 1000)
 
-        return () => clearInterval(flagInterval);
-    })
+//         return () => clearInterval(flagInterval);
+//     })
 
-    return(
-        <p id="target">{timer}</p>
-    )
-}
+//     return(
+//         <p id="target">{timer}</p>
+//     )
+// }
 
-export default User
+// export default User
