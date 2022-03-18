@@ -3,7 +3,6 @@ import {Form, Input, Button} from 'antd';
 
 const LoginPage = () => {
     return(
-        <div>
         <Form
       name="normal_login"
       className="login-form"
@@ -59,7 +58,6 @@ const LoginPage = () => {
         <p>Or <Link to='register'>register now!</Link></p>
      </Form.Item>
     </Form>
-    </div>
   );
     
 }
